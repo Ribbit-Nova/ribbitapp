@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ribbitapp/src/views/onboarding_view.dart';
-// import 'package:ribbitapp/src/views/onboarding_view.dart';
+import 'package:ribbitapp/src/screens/onboarding_screen.dart';
 
-class SplashView extends StatelessWidget {
-  const SplashView({super.key});
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => OnboardingView()));
+          context, MaterialPageRoute(builder: (context) => OnboardingScreen()));
     });
 
     return Scaffold(
