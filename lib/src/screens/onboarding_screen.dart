@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OnboardingView extends StatelessWidget {
-  const OnboardingView({super.key});
+class OnboardingScreen extends StatelessWidget {
+  const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,12 +50,10 @@ class OnboardingView extends StatelessWidget {
                       value: false,
                       onChanged: (value) {},
                     ),
-                    Expanded(
-                      child: Text(
-                        "I agree to the Terms of Service",
-                        style: theme.textTheme.bodySmall?.copyWith(
-                          decoration: TextDecoration.underline,
-                        ),
+                    Text(
+                      "I agree to the Terms of Service",
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        decoration: TextDecoration.underline,
                       ),
                     ),
                   ],
